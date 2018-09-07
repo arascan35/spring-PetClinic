@@ -1,4 +1,4 @@
-package canaras.springframework.springPetClinic;
+package canaras.springframework.springPetClinic.Model;
 
 public class PetType {
 
