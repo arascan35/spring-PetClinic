@@ -4,7 +4,7 @@
 
 	<groupId>canaras.springframework</groupId>
 	<artifactId>spring-PetClinic</artifactId>
-	<version>0.0.5</version>
+	<version>0.0.5-SNAPSHOT</version>
     <modules>
         <module>pet-clinic-data</module>
 		<module>pet-clinic-web</module>
@@ -51,7 +51,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/arascan35/spring-PetClinic.git</developerConnection>
-		<tag>spring-PetClinic-0.0.5</tag>
+		<tag>spring-PetClinic-0.0.4</tag>
   </scm>
 
 
