@@ -3,9 +3,11 @@ package canaras.springframework.springPetClinic.services.map;
 import canaras.springframework.springPetClinic.Model.Owner;
 import canaras.springframework.springPetClinic.services.CrudService;
 import canaras.springframework.springPetClinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override

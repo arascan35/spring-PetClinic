@@ -2,9 +2,11 @@ package canaras.springframework.springPetClinic.services.map;
 
 import canaras.springframework.springPetClinic.Model.Pet;
 import canaras.springframework.springPetClinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long>  implements PetService {
 
     @Override

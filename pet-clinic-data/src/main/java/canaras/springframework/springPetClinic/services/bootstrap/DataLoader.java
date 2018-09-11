@@ -4,8 +4,6 @@ import canaras.springframework.springPetClinic.Model.Owner;
 import canaras.springframework.springPetClinic.Model.Vet;
 import canaras.springframework.springPetClinic.services.OwnerService;
 import canaras.springframework.springPetClinic.services.VetService;
-import canaras.springframework.springPetClinic.services.map.OwnerServiceMap;
-import canaras.springframework.springPetClinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 
 public class DataLoader implements CommandLineRunner {
@@ -13,9 +11,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService=new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
